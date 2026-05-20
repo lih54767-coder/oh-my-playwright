@@ -124,7 +124,9 @@ git clone https://github.com/<your-username>/oh-my-playwright ~/.opencode/skills
 
 ## 致谢
 
-本技能最初基于 opencode 内置的 `playwright-explore-website` 模板技能。原始模板仅包含 17 行指令文本，本技能已完全重写（300+ 行），新增：
+本技能最初基于 [github/awesome-copilot](https://github.com/github/awesome-copilot) 仓库中的 [`playwright-explore-website`](https://github.com/github/awesome-copilot/tree/main/skills/playwright-explore-website) 技能（MIT 许可证）。
+
+原始技能仅包含 17 行指令文本，本技能（`oh-my-playwright`）已完全重写（300+ 行），新增：
 
 - 完整的登录检测和认证处理（Phase 1-2）
 - 一次性配置向导与配置生成（Phase 0）

@@ -115,15 +115,15 @@ The skill will guide you through configuration on first use. To manually configu
 
 ## Attribution
 
-This skill was originally based on the `playwright-explore-website` template skill bundled with opencode. It has been substantially rewritten with:
+This skill was originally based on the [`playwright-explore-website`](https://github.com/github/awesome-copilot/tree/main/skills/playwright-explore-website) skill from the [github/awesome-copilot](https://github.com/github/awesome-copilot) repository (licensed under MIT).
+
+The original skill is a 17-line instruction prompt that tells the agent to explore a website and generate test cases. This project (`oh-my-playwright`) is a substantial rewrite at 300+ lines, adding:
 
 - Complete login detection and authentication handling (Phase 1-2)
 - One-time setup wizard with config generation (Phase 0)
 - Multi-browser support (Edge, Chrome, Chromium)
 - Anti-idle detection for automated video playback scenarios
 - Chinese language support in detection patterns
-
-The original template contained only a 17-line instruction prompt. This skill is a ground-up rewrite at 300+ lines.
 
 ## License
 
