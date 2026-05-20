@@ -1,5 +1,7 @@
 # oh-my-playwright
 
+**[中文文档](README_CN.md)**
+
 An [opencode](https://github.com/anomalyco/opencode) skill for browser automation and website exploration with **automatic login detection, authentication handling, and zero-config-first-time setup**.
 
 ## What it does

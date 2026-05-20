@@ -1,5 +1,7 @@
 # oh-my-playwright
 
+**[English](README.md)**
+
 一个 [opencode](https://github.com/anomalyco/opencode) 技能插件，用于浏览器自动化和网站探索，支持**自动检测登录墙、引导认证、零配置首次安装**。
 
 ## 功能
