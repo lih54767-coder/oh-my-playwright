@@ -1,0 +1,4 @@
+.playwright/
+*.log
+node_modules/
+.env
