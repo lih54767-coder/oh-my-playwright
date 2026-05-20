@@ -588,3 +588,26 @@ for (const [qIdx, answer] of Object.entries(answers)) {
 - Re-submitting a form? Dropdown options may have been updated.
 - Re-running a test? Test data may have been refreshed.
 - **Always re-read before re-act.**
+
+### ❌ Anti-Pattern 6: Changing DOM/JS Properties Instead of Using Platform UI
+
+```
+# BAD: Directly modify video playbackRate to "set" 2x speed
+video.playbackRate = 2
+# → Video stream IS 2x faster
+# → But platform says "you didn't enable 2x"
+# → Video completion doesn't count — wasted all that time
+```
+
+```
+# GOOD: Use Playwright native click on the platform's speed control UI
+page.locator('.jw-icon-playrate').click()
+page.locator('.jw-menu-playrate >> text=×2').click()
+# → URL changes to include &rate=2
+# → Platform recognizes the speed setting
+# → Completion counts
+```
+
+**Why this happens**: Platforms often manage state through URL parameters, cookies, backend sessions, or internal APIs — not just DOM properties. Changing `video.playbackRate`, `input.checked`, or `element.classList` directly might update the visual appearance, but the platform's backend has no idea you did it.
+
+**General rule**: Any operation that needs "the platform to know" (speed settings, confirmations, sign-ins, form submissions) MUST be triggered through the platform's own UI elements via Playwright native clicks, not by manipulating underlying DOM/JS properties. Verify the platform actually registered the change by checking URL parameters, network requests, or platform-specific indicators.
