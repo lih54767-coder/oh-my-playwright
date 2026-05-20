@@ -58,6 +58,8 @@ If login fails (e.g., site blocks automated browsers), the skill can switch to c
 
 ## Installation
 
+### 1. Install the skill
+
 ```bash
 # Clone into your opencode skills directory
 git clone https://github.com/<your-username>/oh-my-playwright ~/.opencode/skills/oh-my-playwright
@@ -66,6 +68,26 @@ git clone https://github.com/<your-username>/oh-my-playwright ~/.opencode/skills
 Or manually:
 1. Create directory `~/.opencode/skills/oh-my-playwright/`
 2. Copy `SKILL.md` into it
+
+### 2. Install Playwright MCP Bridge extension (for Extension mode)
+
+If you plan to use Extension mode (recommended), install the browser extension:
+
+**Extension link**: [Playwright MCP Bridge - Chrome Web Store](https://chromewebstore.google.com/detail/playwright-mcp-bridge/mmlmfjhmonkocbjadbfplnigmagldckm)
+
+**Install steps:**
+1. Open the link above in your browser (Edge or Chrome)
+2. Click "Add to Chrome" or "Get"
+3. Confirm the installation
+4. The extension icon should appear in your browser toolbar
+
+**Note for Edge users**: Edge supports Chrome Web Store extensions. Just open the link in Edge and install normally.
+
+### 3. (Optional) Enable remote debugging (for CDP mode only)
+
+If you plan to use CDP mode instead:
+- **Edge**: Navigate to `edge://inspect/#remote-debugging`, enable "Allow remote debugging for this browser instance"
+- **Chrome**: Navigate to `chrome://inspect/#remote-debugging`, enable "Allow remote debugging for this browser instance"
 
 ## Configuration
 

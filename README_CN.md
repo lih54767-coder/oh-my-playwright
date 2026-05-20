@@ -58,6 +58,8 @@
 
 ## 安装
 
+### 1. 安装技能
+
 ```bash
 # 克隆到 opencode 技能目录
 git clone https://github.com/<your-username>/oh-my-playwright ~/.opencode/skills/oh-my-playwright
@@ -66,6 +68,26 @@ git clone https://github.com/<your-username>/oh-my-playwright ~/.opencode/skills
 或手动安装：
 1. 创建目录 `~/.opencode/skills/oh-my-playwright/`
 2. 将 `SKILL.md` 复制进去
+
+### 2. 安装 Playwright MCP Bridge 扩展（Extension 模式需要）
+
+如果使用 Extension 模式（推荐），需要安装浏览器扩展：
+
+**扩展地址**：[Playwright MCP Bridge - Chrome Web Store](https://chromewebstore.google.com/detail/playwright-mcp-bridge/mmlmfjhmonkocbjadbfplnigmagldckm)
+
+**安装步骤：**
+1. 在浏览器（Edge 或 Chrome）中打开上面的链接
+2. 点击"添加到 Chrome"或"获取"
+3. 确认安装
+4. 浏览器工具栏中应出现扩展图标
+
+**Edge 用户注意**：Edge 支持直接安装 Chrome Web Store 的扩展，在 Edge 中打开链接正常安装即可。
+
+### 3. （可选）开启远程调试（仅 CDP 模式需要）
+
+如果使用 CDP 模式：
+- **Edge**：在地址栏输入 `edge://inspect/#remote-debugging`，开启"Allow remote debugging for this browser instance"
+- **Chrome**：在地址栏输入 `chrome://inspect/#remote-debugging`，开启"Allow remote debugging for this browser instance"
 
 ## 配置
 
